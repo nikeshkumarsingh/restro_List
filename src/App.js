@@ -5,43 +5,54 @@ import { Restaurantlist } from './components/Restaurantlist';
 import{Restroinput}from"./components/Restroinput"
 function App() {
   const [load,setLoad]=useState(false);
-  const [progress, setProgress] = useState(0);
+
   const [list,setList]=useState([]);
   const [page,setPage]=useState(1);
   //const [total,setTotal]=useState(1);
+  const [formdata,setFormdata]=useState({
+    name:"",
+    Image:"",
+    rating:"",
+    categorie:"",
+    min_amount:"",
+    cash:false,
+    upi:false,
+    card:false,
+    
+})
+const [filter, setFilter] = useState([]);
+const handleChange=(e)=>{
+  setFormdata({
+      ...formdata,[e.target.id]:e.target.value
+  })
+}
+
+const handleSubmit=async (e)=>{
+  e.preventDefault();
+  try{
+ await fetch(` http://localhost:8080/users`,{
+      method:"POST",
+      body : JSON.stringify(formdata),
+      headers : {"Content-Type" : "application/json"}
+  })
+  getdata()
+ }
+ catch(err){
+     console.log(err)
+ }
+ }
   useEffect(()=>{
     getdata();
   },[page])
-  // useEffect(async()=>{
-  //   let data=await fetch(`http://localhost:8080/users`);
-  //   let data1=await data.json();
-  //   setTotal(data1.length)
-  // },[])
-  const postdata=async(payload)=>{
-    try{
-      setProgress(30);
-      setLoad(true);
-      let response1=await fetch(`http://localhost:8080/users`,{
-        method:"POST",
-        body:JSON.stringify(payload),
-        headers:{"content-type":"application/json"},
-      })
-    }
-    catch(err){
-      console.log(err);
-    }
-  }
-  // const handleClick=()=>{
-  //   const payload={}
-  // }
-  const handleChange=()=>{
-    setpayload
-  }
+ 
+
+  
   const getdata=async()=>{
     let data=await fetch(`http://localhost:8080/users?_page=${page}&_limit=3`);
     let data1=await data.json();
     console.log(data1)
     setList(data1);
+    setFilter(data1);
   }
  
   const handlePrev=()=>{
@@ -50,11 +61,18 @@ function App() {
   const handleNext=()=>{
     setPage(page+1);
   }
+
+  const sortrating=()=>{
+    let item=list.sort((a,b)=>a.rating-b.rating)
+    console.log(item)
+    setFilter(item)
+    
+  }
   return (
     <div className="App">
      <h1>TOP RESTAURANT</h1>
-     <Restaurantlist load={load} list={list} setList={setList} handlePrev={handlePrev} handleNext={handleNext} page={page} />
-     <Restroinput handleChange={handleChange}/>
+     <Restaurantlist load={load} list={filter} setList={setList} handlePrev={handlePrev} handleNext={handleNext} page={page} />
+     <Restroinput handleChange={handleChange} handleSubmit={handleSubmit} sortrating={sortrating}/>
     </div>
   );
 }

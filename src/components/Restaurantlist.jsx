@@ -9,7 +9,7 @@ export const Restaurantlist=({list,setList,load,handlePrev,handleNext,page})=>{
               <p>Min:{" ₹"+e.min_amount}</p>
               <div>{e.rating}</div>
               </div>
-              <div>{e.payment.cash==true ?"cash":""} | {e.payment.upi==true ?"upi":" "} | {e.payment.card==true ?"card":""}</div> 
+              <div>{e.cash=="on" ?"cash":""} | {e.upi=="on" ?"upi":" "} | {e.card=="on" ?"card":""}</div> 
               </div></div>)
             }
             <button disabled={page==1} onClick={handlePrev}>prev</button>
