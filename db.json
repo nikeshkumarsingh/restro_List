@@ -1,0 +1,190 @@
+{
+    "users":[
+        {
+            "id":12,
+            "name":"La Pino'z",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/rfgsm05nlfo6rpclhpyn",
+            "rating":3.9,
+            "categorie":"Non Veg",
+            "min_amount":50,
+            "payment":{"cash":true,"upi":false,"card":true}
+            
+        },
+        {
+            "id":13,
+            "name":"Banjara",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/Swiggy-Dash/kxxqvupzho0dlwatwzig",
+            "rating":4.1,
+            "categorie":"Veg",
+            "min_amount":100,
+            "payment":{"cash":false,"upi":true,"card":true}
+            
+        },
+        {
+            "id":14,
+            "name":"shaw-powl",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/np13tsnfrxylkrk1ykm5",
+            "rating":3.5,
+            "categorie":"Non-Veg",
+            "min_amount":180,
+            "payment":{"cash":true,"upi":true,"card":false}
+            
+        },
+        {
+            "id":15,
+            "name":"The Biryani Mall",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/pxt1apvbivakupt7jqna",
+            "rating":3.8,
+            "categorie":"Non-Veg||Veg",
+            "min_amount":200,
+            "payment":{"cash":true,"upi":true,"card":false}
+            
+        },
+        {
+            "id":16,
+            "name":"Anmol",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/qzwwf2gzqdkqp4nsquzi",
+            "rating":3.7,
+            "categorie":"Veg",
+            "min_amount":300,
+            "payment":{"cash":true,"upi":true,"card":false}
+            
+        },
+        {
+            "id":17,
+            "name":"Anmol",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/qzwwf2gzqdkqp4nsquzi",
+            "rating":3.7,
+            "categorie":"Veg",
+            "min_amount":300,
+            "payment":{"cash":true,"upi":true,"card":true}
+            
+        },
+        {
+            "id":18,
+            "name":"Biryani By Kilo",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/sesel0yk29ymq4920vez",
+            "rating":4.1,
+            "categorie":"Non Veg",
+            "min_amount":400,
+            "payment":{"cash":true,"upi":false,"card":false}
+        },
+        {
+            "id":19,
+            "name":"Desi Chulhaa",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/do8ajr19mhg0pbfcfyhj",
+            "rating":5.0,
+            "categorie":"Non Veg||Veg",
+            "min_amount":100,
+            "payment":{"cash":true,"upi":true,"card":false}
+        },
+        {
+            "id":20,
+            "name":"Brunch italino",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/itv7in1kfuzrpfec1ojo",
+            "rating":5.0,
+            "categorie":"Non Veg||Veg",
+            "min_amount":70,
+            "payment":{"cash":false,"upi":true,"card":false}
+        },
+        {
+            "id":21,
+            "name":"Momo Cafe",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/qdiyhekwq35h0surunl2",
+            "rating":4.4,
+            "categorie":"Non Veg||Veg",
+            "min_amount":120,
+            "payment":{"cash":false,"upi":false,"card":true}
+        },
+        {
+            "id":22,
+            "name":"Chinese window",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/bzuq2n6swyxeswkdbnlj",
+            "rating":3.7,
+            "categorie":"Veg",
+            "min_amount":100,
+            "payment":{"cash":true,"upi":false,"card":true}
+        },
+        {
+            "id":23,
+            "name":"Luveat",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/jvrba3q5fty9pcwbpnt9",
+            "rating":3.1,
+            "categorie":"Non Veg||Veg",
+            "min_amount":250,
+            "payment":{"cash":true,"upi":true,"card":true}
+        },
+        {
+            "id":24,
+            "name":"Keveters",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/g81lwma4exavxybcae1e",
+            "rating":4.3,
+            "categorie":"Veg",
+            "min_amount":90,
+            "payment":{"cash":false,"upi":true,"card":true}
+        },
+        {
+            "id":25,
+            "name":"Bonker's Cafe",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eyyemvr5kzgv3erdmi9e",
+            "rating":3.6,
+            "categorie":"Veg",
+            "min_amount":185,
+            "payment":{"cash":true,"upi":true,"card":true}
+        },
+        {
+            "id":26,
+            "name":"Lakhu da Dhaba",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/o1toqkkf1zpbzrtxjp8z",
+            "rating":3.6,
+            "categorie":"Veg",
+            "min_amount":185,
+            "payment":{"cash":true,"upi":false,"card":true}
+        },
+        {
+            "id":27,
+            "name":"The Daerk Cafe & Restaurant",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/yqkgzjtcuuzcffsou9yr",
+            "rating":3.9,
+            "categorie":"Non Veg",
+            "min_amount":200,
+            "payment":{"cash":true,"upi":false,"card":true}
+        },
+        {
+            "id":28,
+            "name":"EXPRESS by AB's",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/cizspl1engxww9tkvqyd",
+            "rating":3.6,
+            "categorie":"Veg",
+            "min_amount":600,
+            "payment":{"cash":false,"upi":false,"card":true}
+        },
+        {
+            "id":29,
+            "name":"Y Cheat Meals",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/tqlowcscgwhvsdjk6k4v",
+            "rating":3.9,
+            "categorie":"Non Veg||Veg",
+            "min_amount":90,
+            "payment":{"cash":true,"upi":false,"card":true}
+        },
+        {
+            "id":30,
+            "name":"Waffcha",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/b11zcydramfic1gwl0jt",
+            "rating":3.2,
+            "categorie":"Veg",
+            "min_amount":50,
+            "payment":{"cash":false,"upi":false,"card":true}
+        },
+        {
+            "id":31,
+            "name":"Motu Bhai cafe and canteen",
+            "Image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/kdv81ipa4x58bnijvv6c",
+            "rating":3.7,
+            "categorie":"Veg",
+            "min_amount":50,
+            "payment":{"cash":true,"upi":true,"card":true}
+        }
+    ]
+}
