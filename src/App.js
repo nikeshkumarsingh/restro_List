@@ -21,6 +21,7 @@ function App() {
     
 })
 const [filter, setFilter] = useState([]);
+console.log(filter)
 const handleChange=(e)=>{
   setFormdata({
       ...formdata,[e.target.id]:e.target.value
@@ -48,9 +49,9 @@ const handleSubmit=async (e)=>{
 
   
   const getdata=async()=>{
-    let data=await fetch(`http://localhost:8080/users?_page=${page}&_limit=3`);
+    let data=await fetch(`http://localhost:8080/users?_page=${page}`);
     let data1=await data.json();
-    console.log(data1)
+   // console.log(data1)
     setList(data1);
     setFilter(data1);
   }
@@ -64,8 +65,9 @@ const handleSubmit=async (e)=>{
 
   const sortrating=()=>{
     let item=list.sort((a,b)=>a.rating-b.rating)
-    console.log(item)
-    setFilter(item)
+    //console.log(item)
+    setFilter([...item])
+    
     
   }
   return (

@@ -228,6 +228,17 @@
       "card": "on",
       "upi": "on",
       "id": 52
+    },
+    {
+      "name": "sawan",
+      "Image": "https://imgs.search.brave.com/VU4lX_LEyN0w71DQQZwGUZOdoCsoieMG2zjFY79SdVs/rs:fit:538:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5q/M3VZc3JEdkRnYjNp/TFh2eDFrY0RnSGFH/aCZwaWQ9QXBp",
+      "rating": "3.4",
+      "categorie": "veg",
+      "min_amount": "250",
+      "cash": "on",
+      "upi": false,
+      "card": "on",
+      "id": 53
     }
   ]
 }
