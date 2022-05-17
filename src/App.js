@@ -70,11 +70,23 @@ const handleSubmit=async (e)=>{
     
     
   }
+  const sortrating4=()=>{
+    let item=list.filter((e)=>e.rating>=4&&e.rating<5)
+    setFilter([...item])
+  }
+  const sortrating5=()=>{
+    let item=list.filter((e)=>e.rating>=5&&e.rating<6)
+    setFilter([...item])
+  }
+  const sortrating3=()=>{
+    let item=list.filter((e)=>e.rating>=3&&e.rating<4)
+    setFilter([...item])
+  }
   return (
     <div className="App">
      <h1>TOP RESTAURANT</h1>
      <Restaurantlist load={load} list={filter} setList={setList} handlePrev={handlePrev} handleNext={handleNext} page={page} />
-     <Restroinput handleChange={handleChange} handleSubmit={handleSubmit} sortrating={sortrating}/>
+     <Restroinput handleChange={handleChange} handleSubmit={handleSubmit} sortrating3={sortrating3} sortrating4={sortrating4} sortrating5={sortrating5} sortrating={sortrating}/>
     </div>
   );
 }

@@ -1,10 +1,12 @@
 import React from"react";
 import"./resaurant.css"
-export const Restroinput=({handleChange,handleSubmit,sortrating})=>{
+export const Restroinput=({handleChange,handleSubmit,sortrating3,sortrating4,sortrating5,sortrating })=>{
     return(
         <div className="main">
-            <button onClick={sortrating}>sort high to low rating</button>
-           
+            <button onClick={sortrating}>sort low to high rating</button>
+            <button onClick={sortrating3}> Restaurant with rating 3</button>
+            <button onClick={sortrating4}> Restaurant with rating 4</button>
+            <button onClick={sortrating5}> Restaurant with rating 5</button>
             <div id="inner">
             <h2>POST Restaurant</h2>
             <form onSubmit={handleSubmit}>
